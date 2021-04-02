@@ -2,7 +2,7 @@
     width:100vw;
     background-color:aliceblue;
     max-width:100%;
-    height:calc(100vh-30px);
+    height:90vh;
 }
 #editorButtons{
     width:100vw;
