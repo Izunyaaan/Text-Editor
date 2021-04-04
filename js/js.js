@@ -129,6 +129,7 @@ function loadContent() {
 
 function resetContent() {
     document.getElementById("fileName").placeholder = "New Document";
+    document.getElementById("fileName").value = "";
     document.getElementById("textArea").innerHTML = "";
     localStorage.setItem('title', 'New Document');
     localStorage.setItem('content', '');
