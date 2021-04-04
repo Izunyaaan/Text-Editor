@@ -153,8 +153,9 @@ input {
 
 .rotate {
     position: absolute;
-    top: 50vh;
+    top: 5vh;
     width: 90vh;
+    text-align: center;
     transform: rotate(-90deg);
     /* Legacy vendor prefixes that you probably don't need... */
     /* Safari */
