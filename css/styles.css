@@ -24,6 +24,11 @@ html {
     background: #FF0000;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 #textArea {
     overflow: scroll;
     margin: auto;
@@ -34,6 +39,10 @@ html {
 }
 
 #titleBar {
+    margin: auto;
+}
+
+#editorButtons {
     margin: auto;
 }
 
@@ -64,6 +73,9 @@ Normal Screen stuff
         height: 40px;
         padding: 2px;
         align-items: center;
+    }
+    #editorButtons {
+        width: 90vw;
     }
 }
 
