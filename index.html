@@ -9,28 +9,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 </head>
 
-<body>
+<body onunload="saveContent()">
     <audio id="coffinDance" src="audio/Coffin Dance (Official Music Video HD).mp3"></audio>
     <div id="titleBar">
         <input id="fileName" type="text" placeholder="New Document">
+        <button id="reset" title="New"><i class="fas fa-file"></i></button>
         <span id="timeChanged"></span>
     </div>
     <div id="textArea" contenteditable="true"></div>
     <div id="editorButtons">
-        <button id="bold"><strong>B</strong></button>
-        <button id="italic"><strong><em>I</em></strong></button>
-        <button id="underline"><strong><u>U</u></strong></button>
-        <button id="strikeThrough"><strike>abc</strike></button>
-        <button id="bold"><strong>B</strong></button>
-        <button id="bold"><strong>B</strong></button>
-        <button id="bold"><strong>B</strong></button>
-        <button id="bold"><strong>B</strong></button>
-        <button id="bold"><strong>B</strong></button>
-        <button id="bold"><strong>B</strong></button>
-        <button id="none"><strong>Clear</strong></button>
+        <button id="bold" title="Bold"><strong>B</strong></button>
+        <button id="italic" title="Italic"><strong><em>I</em></strong></button>
+        <button id="underline" title="Underline"><strong><u>U</u></strong></button>
+        <button id="strikeThrough" title="Strikethrough"><strike>abc</strike></button>
+        <button id="subscript" title="Subscript"><strong>x<sub>2</sub></strong></button>
+        <button id="superscript" title="Superscript"><strong>x<sup>2</sup></strong></button>
+        <button id="removeFormat" title="Clear Formatting"><strong><i class="fas fa-remove-format"></i></strong></button>
+        <button id="undo" title="Undo"><strong><i class="fas fa-undo"></i></strong></button>
+        <button id="redo" title="Redo"><strong><i class="fas fa-redo"></i></strong></button>
+        <button id="rickRoll" title="Do Not Press. You have been warned."><strong><i class="fas fa-skull-crossbones"></i></strong></button>
     </div>
-    <script src="js/js.js">
-        loadContent()
+    <p id="wordCount">Word Count: </p>
+    <div id="clippyDiv" onClick="clippy()">
+
+    </div>
+    <script src="js/js.js"></script>
+    <script>
+        loadContent();
     </script>
 </body>
 
