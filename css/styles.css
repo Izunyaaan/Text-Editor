@@ -121,6 +121,12 @@ Small Screen optimized
     #timeChanged {
         display: block;
     }
+    #timeChanged::before {
+        content: "<br>";
+    }
+    #timeChanged::after {
+        content: "<br>";
+    }
     #editorButtons {
         order: 2;
         width: 15vw;
