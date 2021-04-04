@@ -33,6 +33,16 @@ button.forEach(i => {
         styleIt(i.id);
     });
 });
+const fontSizeSelect = document.getElementById("fontSize");
+
+fontSizeSelect.addEventListener('change', (event) => {
+    wrapSelectedText(fontSizeSelect.value);
+});
+const fontFamilySelect = document.getElementById("fontFamily");
+
+fontFamilySelect.addEventListener('change', (event) => {
+    document.execCommand("fontName", false, fontFamilySelect.value);
+});
 
 /*
     ==============================================================
@@ -53,8 +63,8 @@ function styleIt(style) {
     document.execCommand(style);
 }
 
-function test() {
-    window.alert(document.getElementById("fileName").value);
+function test(a) {
+    window.alert(a);
 }
 
 //Partial personalized exec command
@@ -70,7 +80,7 @@ function wrapSelectedText(aStyle) {
             span.style.fontStyle = "italic";
             break;
         default:
-            window.alert(localStorage.getItem('content'));
+            span.style.fontSize = aStyle + "px";
     }
     span.appendChild(selectedText);
     selection.insertNode(span);

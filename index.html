@@ -32,6 +32,34 @@
         <button id="undo" title="Undo"><strong><i class="fas fa-undo"></i></strong></button>
         <button id="redo" title="Redo"><strong><i class="fas fa-redo"></i></strong></button>
         <button id="rickRoll" title="Do Not Press. You have been warned."><strong><i class="fas fa-skull-crossbones"></i></strong></button>
+        <button id="justifyLeft" title="Justify Left"><strong><i class="fas fa-align-left"></i></i></strong></button>
+        <button id="justifyCenter" title="Justify Center"><strong><i class="fas fa-align-center"></i></strong></button>
+        <button id="justifyRight" title="Justify Right"><strong><i class="fas fa-align-right"></i></strong></button>
+        <button id="justifyFull" title="Justify Full"><strong><i class="fas fa-align-justify"></i></strong></button>
+        <select name="fontSize" id="fontSize">
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="8">8</option>
+            <option value="10">10</option>
+            <option value="12">12</option>
+            <option value="14">14</option>
+            <option value="16" selected="selected">16</option>
+            <option value="18">18</option>
+            <option value="22">22</option>
+            <option value="27">27</option>
+            <option value="32">32</option>
+            <option value="64">64</option>
+            <option value="72">72</option>
+            <option value="85">85</option>
+            <option value="105">105</option>
+        </select>
+        <select name="fontFamily" id="fontFamily">
+            <option value="Arial" style="font-family: Arial;">Arial</option>
+            <option value="Calibri" style="font-family: Calibri;">Calibri</option>
+            <option value="Comic Sans MS" style="font-family: Comic Sans MS;">Comic Sans MS</option>
+            <option value="Courier New" style="font-family: Courier New;">Courier New</option>
+            <option value="Brush Script MT" style="font-family: Brush Script MT;">Brush Script MT</option>
+        </select>
     </div>
     <p id="wordCount">Word Count: </p>
     <div id="clippyDiv" onClick="clippy()">
