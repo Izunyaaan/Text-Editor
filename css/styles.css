@@ -138,8 +138,8 @@ input {
     position: fixed;
     top: 0;
     right: -60vw;
-    font-size: 3em;
-    text-align: right;
+    font-size: 1.5em;
+    text-align: left;
     z-index: 3;
     background: rgb(0, 0, 0);
     background: -moz-linear-gradient(306deg, rgba(0, 0, 0, 1) 25%, rgba(9, 9, 121, 1) 50%, rgba(0, 212, 255, 1) 100%);
