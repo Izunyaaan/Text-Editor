@@ -12,9 +12,17 @@ window.addEventListener('keyup', function(e) {
     if (e.key == '.') {
         document.getElementById("coffinDance").pause();
     }
-    updateDate();
+});
+window.addEventListener('touchstart', function(e) {
+    document.getElementById("coffinDance").play();
+});
+window.addEventListener('touchend', function(e) {
+    document.getElementById("coffinDance").pause();
 });
 document.getElementById("textArea").addEventListener("change", function(e) {
+    updateDate();
+});
+document.getElementById("fileName").addEventListener("change", function(e) {
     updateDate();
 });
 /*
