@@ -110,6 +110,8 @@ Small Screen optimized
         max-width: 100%;
         height: 30px;
         margin-bottom: 3px;
+        display: flex;
+        flex-wrap: wrap;
     }
     #textArea {
         order: 1;
@@ -120,12 +122,7 @@ Small Screen optimized
     }
     #timeChanged {
         display: block;
-    }
-    #timeChanged::before {
-        content: '\A';
-    }
-    #timeChanged::after {
-        content: '\A';
+        width: 90vw;
     }
     #editorButtons {
         order: 2;
