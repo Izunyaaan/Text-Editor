@@ -133,6 +133,9 @@ Small Screen optimized
         width: 9vw;
         height: 9vw;
     }
+    input {
+        width: 80vw;
+    }
 }
 
 
