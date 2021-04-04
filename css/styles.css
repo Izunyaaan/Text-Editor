@@ -121,8 +121,7 @@ Small Screen optimized
         margin-bottom: 3px;
     }
     #timeChanged {
-        display: block;
-        width: 90vw;
+        display: none;
     }
     #editorButtons {
         order: 2;
