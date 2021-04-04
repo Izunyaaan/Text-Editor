@@ -43,6 +43,132 @@ input {
 }
 
 
+/* The animation code */
+
+@keyframes leftSlide {
+    0% {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgb(0, 0, 0);
+        background: -moz-linear-gradient(306deg, rgba(0, 0, 0, 1) 25%, rgba(9, 9, 121, 1) 50%, rgba(0, 212, 255, 1) 100%);
+        background: -webkit-linear-gradient(306deg, rgba(0, 0, 0, 1) 25%, rgba(9, 9, 121, 1) 50%, rgba(0, 212, 255, 1) 100%);
+        background: linear-gradient(306deg, rgba(0, 0, 0, 1) 25%, rgba(9, 9, 121, 1) 50%, rgba(0, 212, 255, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#00d4ff", GradientType=1);
+    }
+    74% {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgb(0, 0, 0);
+        background: rgb(0, 0, 0);
+        background: -moz-linear-gradient(135deg, rgba(0, 0, 0, 1) 25%, rgba(9, 9, 121, 1) 50%, rgba(0, 212, 255, 1) 100%);
+        background: -webkit-linear-gradient(135deg, rgba(0, 0, 0, 1) 25%, rgba(9, 9, 121, 1) 50%, rgba(0, 212, 255, 1) 100%);
+        background: linear-gradient(135deg, rgba(0, 0, 0, 1) 25%, rgba(9, 9, 121, 1) 50%, rgba(0, 212, 255, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#00d4ff", GradientType=1);
+    }
+    75% {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    100% {
+        position: fixed;
+        top: 0;
+        left: -60vw;
+    }
+}
+
+@keyframes rightSlide {
+    0% {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: rgb(0, 0, 0);
+        background: rgb(0, 0, 0);
+        background: -moz-linear-gradient(135deg, rgba(0, 0, 0, 1) 25%, rgba(9, 9, 121, 1) 50%, rgba(0, 212, 255, 1) 100%);
+        background: -webkit-linear-gradient(135deg, rgba(0, 0, 0, 1) 25%, rgba(9, 9, 121, 1) 50%, rgba(0, 212, 255, 1) 100%);
+        background: linear-gradient(135deg, rgba(0, 0, 0, 1) 25%, rgba(9, 9, 121, 1) 50%, rgba(0, 212, 255, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#00d4ff", GradientType=1);
+    }
+    74% {
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+    75% {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: rgb(0, 0, 0);
+        background: -moz-linear-gradient(306deg, rgba(0, 0, 0, 1) 25%, rgba(9, 9, 121, 1) 50%, rgba(0, 212, 255, 1) 100%);
+        background: -webkit-linear-gradient(306deg, rgba(0, 0, 0, 1) 25%, rgba(9, 9, 121, 1) 50%, rgba(0, 212, 255, 1) 100%);
+        background: linear-gradient(306deg, rgba(0, 0, 0, 1) 25%, rgba(9, 9, 121, 1) 50%, rgba(0, 212, 255, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#00d4ff", GradientType=1);
+    }
+    100% {
+        position: fixed;
+        top: 0;
+        right: -60vw;
+    }
+}
+
+#leftCurtain {
+    animation-name: leftSlide;
+    animation-duration: 1.5s;
+    position: fixed;
+    top: 0;
+    left: -60vw;
+    background: rgb(0, 0, 0);
+    background: rgb(0, 0, 0);
+    background: -moz-linear-gradient(135deg, rgba(0, 0, 0, 1) 25%, rgba(9, 9, 121, 1) 50%, rgba(0, 212, 255, 1) 100%);
+    background: -webkit-linear-gradient(135deg, rgba(0, 0, 0, 1) 25%, rgba(9, 9, 121, 1) 50%, rgba(0, 212, 255, 1) 100%);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 1) 25%, rgba(9, 9, 121, 1) 50%, rgba(0, 212, 255, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#00d4ff", GradientType=1);
+    width: 50vw;
+    height: 100vh;
+    color: wheat;
+    z-index: 3;
+    font-size: 3em;
+}
+
+#rightCurtain {
+    animation-name: rightSlide;
+    animation-duration: 1.5s;
+    position: fixed;
+    top: 0;
+    right: -60vw;
+    font-size: 3em;
+    text-align: right;
+    z-index: 3;
+    background: rgb(0, 0, 0);
+    background: -moz-linear-gradient(306deg, rgba(0, 0, 0, 1) 25%, rgba(9, 9, 121, 1) 50%, rgba(0, 212, 255, 1) 100%);
+    background: -webkit-linear-gradient(306deg, rgba(0, 0, 0, 1) 25%, rgba(9, 9, 121, 1) 50%, rgba(0, 212, 255, 1) 100%);
+    background: linear-gradient(306deg, rgba(0, 0, 0, 1) 25%, rgba(9, 9, 121, 1) 50%, rgba(0, 212, 255, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#00d4ff", GradientType=1);
+    width: 50vw;
+    height: 100vh;
+    color: wheat;
+}
+
+.rotate {
+    position: absolute;
+    top: 50vh;
+    transform: rotate(-90deg);
+    /* Legacy vendor prefixes that you probably don't need... */
+    /* Safari */
+    -webkit-transform: rotate(-90deg);
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+    /* IE */
+    -ms-transform: rotate(-90deg);
+    /* Opera */
+    -o-transform: rotate(-90deg);
+    /* Internet Explorer */
+    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+
 /*=========================================================================
 End of Global Stuff
 ==========================================================================*/
