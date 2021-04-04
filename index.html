@@ -15,7 +15,7 @@
         <input id="fileName" type="text" placeholder="New Document">
         <span id="timeChanged"></span>
     </div>
-    <div id="textArea" contenteditable="true"></div>
+    <div id="textArea" onchange="updateDate()" contenteditable="true"></div>
     <div id="editorButtons">
         <button onclick='document.execCommand("bold")' '><strong>B</strong></button>
         </div>
