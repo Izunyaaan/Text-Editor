@@ -122,10 +122,10 @@ Small Screen optimized
         display: block;
     }
     #timeChanged::before {
-        content: "<br>";
+        content: '\A';
     }
     #timeChanged::after {
-        content: "<br>";
+        content: '\A';
     }
     #editorButtons {
         order: 2;
