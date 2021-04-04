@@ -19,10 +19,10 @@ window.addEventListener('touchstart', function(e) {
 window.addEventListener('touchend', function(e) {
     document.getElementById("coffinDance").pause();
 });
-document.getElementById("textArea").addEventListener("change", function(e) {
+document.getElementById("textArea").addEventListener("input", function(e) {
     updateDate();
 });
-document.getElementById("fileName").addEventListener("change", function(e) {
+document.getElementById("fileName").addEventListener("input", function(e) {
     updateDate();
 });
 /*
