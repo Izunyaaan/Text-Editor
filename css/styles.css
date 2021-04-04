@@ -139,7 +139,7 @@ input {
     top: 0;
     right: -60vw;
     font-size: 1.5em;
-    text-align: left;
+    text-align: center;
     z-index: 3;
     background: rgb(0, 0, 0);
     background: -moz-linear-gradient(306deg, rgba(0, 0, 0, 1) 25%, rgba(9, 9, 121, 1) 50%, rgba(0, 212, 255, 1) 100%);
@@ -153,8 +153,7 @@ input {
 
 .rotate {
     position: absolute;
-    top: 5vh;
-    width: 90vh;
+    top: 50vh;
     transform: rotate(-90deg);
     /* Legacy vendor prefixes that you probably don't need... */
     /* Safari */
