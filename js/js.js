@@ -1,6 +1,6 @@
 /*
     ============================================================
-            The All Important Coffin Dance Meme
+            The All Important Coffin Dance Meme + Listeners
     ============================================================
 */
 window.addEventListener('keydown', function(e) {
@@ -14,9 +14,12 @@ window.addEventListener('keyup', function(e) {
     }
     updateDate();
 });
+document.getElementById("textArea").addEventListener("change", function(e) {
+    updateDate();
+});
 /*
     ==============================================================
-            End of Coffin Dance Meme
+            End of Coffin Dance Meme + Listeners
     ==============================================================
 */
 /*
