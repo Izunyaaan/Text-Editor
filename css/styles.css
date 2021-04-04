@@ -26,7 +26,7 @@ html {
 
 body {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
@@ -119,15 +119,19 @@ Small Screen optimized
         margin-bottom: 3px;
     }
     #editorButtons {
-        order: 1;
+        order: 2;
         width: 15vw;
         max-width: 100%;
         height: calc(90vh - 40px);
         margin-bottom: 3px;
     }
+    #wordCount {
+        order: 0;
+        width: 90vw;
+    }
     button {
-        width: 14vw;
-        height: 14vw;
+        width: 9vw;
+        height: 9vw;
     }
 }
 
