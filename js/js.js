@@ -25,6 +25,13 @@ document.getElementById("textArea").addEventListener("input", function(e) {
 document.getElementById("fileName").addEventListener("input", function(e) {
     updateDate();
 });
+let button = document.querySelectorAll("button");
+button.forEach(i => {
+    i.addEventListener("click", function(e) {
+        styleIt(i.id);
+    });
+});
+
 /*
     ==============================================================
             End of Coffin Dance Meme + Listeners
@@ -37,6 +44,26 @@ document.getElementById("fileName").addEventListener("input", function(e) {
 */
 function styleIt(style) {
     document.execCommand(style);
+}
+
+//Partial personalized exec command
+function wrapSelectedText(aStyle) {
+    var selection = window.getSelection().getRangeAt(0);
+    var selectedText = selection.extractContents();
+    var span = document.createElement("span");
+    switch (aStyle) {
+        case "bold":
+            span.style.fontWeight = "bold";
+            break;
+        case "italic":
+            span.style.fontStyle = "italic";
+            break;
+        default:
+            span.style = "none";
+            return;
+    }
+    span.appendChild(selectedText);
+    selection.insertNode(span);
 }
 /*
     ==============================================================

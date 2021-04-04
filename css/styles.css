@@ -27,29 +27,19 @@ html {
 body {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #textArea {
     overflow: scroll;
-    margin: auto;
     background-color: white;
     border: black solid 1px;
-    -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.9));
-    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.9));
-}
-
-#titleBar {
-    margin: auto;
-}
-
-#editorButtons {
-    margin: auto;
 }
 
 input {
     font-size: calc(80% + 1vw + 1vh);
-    height: 80%;
-    margin-bottom: 2px;
 }
 
 
@@ -66,17 +56,23 @@ Normal Screen stuff
     #textArea {
         width: 90vw;
         height: 70vh;
+        order: 2;
+        -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.9));
+        filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.9));
     }
     #titleBar {
         display: flex;
         width: 90vw;
-        height: 40px;
-        padding: 2px;
+        height: 100%;
         align-items: center;
+        order: 0;
     }
     #editorButtons {
+        order: 1;
         width: 90vw;
+        padding: 10px;
     }
+    div {}
 }
 
 
