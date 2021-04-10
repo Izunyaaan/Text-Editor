@@ -36,6 +36,7 @@ button.forEach(i => {
 const fontSizeSelect = document.getElementById("fontSize");
 
 fontSizeSelect.addEventListener('change', (event) => {
+	document.execCommand("removeFormat");
     wrapSelectedText(fontSizeSelect.value);
 });
 const fontFamilySelect = document.getElementById("fontFamily");
@@ -80,7 +81,6 @@ function wrapSelectedText(aStyle) {
             span.style.fontStyle = "italic";
             break;
         default:
-			document.execCommand("removeFormat");
             span.style.fontSize = aStyle + "px";
     }
     span.appendChild(selectedText);
