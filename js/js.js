@@ -80,6 +80,7 @@ function wrapSelectedText(aStyle) {
             span.style.fontStyle = "italic";
             break;
         default:
+			document.execCommand("removeFormat");
             span.style.fontSize = aStyle + "px";
     }
     span.appendChild(selectedText);
